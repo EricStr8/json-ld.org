@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "acp": "https://ericstrate.com/acp-context.jsonld#",
+    "AnswerCitationBlock": {
+      "@id": "acp:AnswerCitationBlock",
+      "@context": {
+        "citationLabel": "acp:citationLabel", 
+        "answerText": "acp:answerText",
+        "relatedSectionId": "acp:relatedSectionId"
+      }
+    },
+    "citationLabel": { "@id": "acp:citationLabel", "@type": "xsd:string" },
+    "answerText": { "@id": "acp:answerText", "@type": "xsd:string" },
+    "relatedSectionId": { "@id": "acp:relatedSectionId", "@type": "@id" }
+  }
+}
