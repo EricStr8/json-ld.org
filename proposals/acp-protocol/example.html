@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>ACP Example</title>
+    <!-- Basic CSS to match your blog's visual style -->
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .citation-marker { background-color: #f0f4f8; color: #333; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 0.9em; margin-left: 5px;}
+        h1 { color: #2c3e50; }
+    </style>
+
+    <!-- The Semantic Layer (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://ericstrate.com/acp-context.jsonld",
-      "@type": ["AnswerCitationBlock"],
+      "@type": ["AnswerCitationBlock"], 
       "@id": "#a1", 
       "citationLabel": "[a1]", 
       "answerText": "The Answer Citation Protocol (ACP) is a web standard designed to optimize content for AI retrieval.",
@@ -18,7 +26,8 @@
 
     <h1>The Future of Web Architecture</h1>
 
-    <p id="section-1">The Answer Citation Protocol (ACP) is a web standard designed to optimize content for AI retrieval by providing pre-summarized, verifiable data blocks that reduce token waste and inference latency. [a1]</p>
+    <!-- The Visual Layer -->
+    <p id="section-1">The Answer Citation Protocol (ACP) is a web standard designed to optimize content for AI retrieval by providing pre-summarized, verifiable data blocks that reduce token waste and inference latency. <span class="citation-marker">[a1]</span></p>
 
     <p>This approach ensures that AI models can retrieve precise answers without parsing unnecessary noise.</p>
 
